@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,400;0,500;1,400&family=Rubik:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+main{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .8rem;
+    box-shadow: 0 3px 10px rgba(243, 43, 43, 0.2);
+    border-radius: 2%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #eeb5c1;
+}
+
+#cover-img{
+    height: 20rem;
+    width: 20rem;
+}
+
+button, 
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+input{
+    color: #432000;
+    background-color: #DCE1E8;
+}
+
+button{
+    color: #FDFDFD;
+    background-color: #AC465A;
+    text-transform: capitalize;
+}
+
+button:hover{
+    background-color: #432000;
+}
+
+#item-list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 3px;
+    text-align: center;
+}
+
+#item-list li{
+    font-family: 'Rubik',  sans-serif;
+    width: fit-content;
+    background-color: #FFFDF8;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    flex-grow: 1;
+    border-radius: 0.3rem;
+    word-wrap: normal;
+}
+
+#item-list li:hover{
+    background-color: #FFECC7;
+    cursor: pointer;
+}
